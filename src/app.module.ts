@@ -4,12 +4,12 @@ import { KnowledgeModule } from './modules/knowledge/knowledge.module.js';
 /**
  * Root Application Module
  * 
- * Pizzaz and Knowledge Engine integration server.
+ * Codebase Knowledge and GitHub integration server.
  */
 @McpApp({
     module: AppModule,
     server: {
-        name: 'knowledge-pizzaz-mcp-server',
+        name: 'codebase-knowledge-mcp',
         version: '1.0.0'
     },
     logging: {
@@ -18,7 +18,7 @@ import { KnowledgeModule } from './modules/knowledge/knowledge.module.js';
 })
 @Module({
     name: 'root',
-    description: 'Knowledge and Pizza MCP services',
+    description: 'Codebase Knowledge and GitHub integration services',
     imports: [
         ConfigModule.forRoot(),
         KnowledgeModule
